@@ -1,0 +1,207 @@
+.root-pane {
+    -fx-background-color: #E3F2FD;
+}
+
+.table-view {
+    -fx-background-color: #D0E9FF;
+    -fx-border-color: #90CAF9;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-column {
+    -fx-background-color: #90CAF9;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #000000;
+}
+
+
+.table-view .column-header,
+.table-view .table-cell {
+    -fx-border-width: 0px;
+    -fx-alignment: center;
+}
+
+.column-header-background {
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.column-header {
+    -fx-background-color: #90CAF9;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+.table-row-cell {
+    -fx-background-color: #BBDEFB;
+    -fx-text-alignment: center;
+    -fx-padding: 5px;
+    -fx-cell-size: 30px;
+    -fx-border-radius:10px;
+    -fx-background-radius:10px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #42A5F5;
+    -fx-text-fill: white;
+}
+
+
+.table-row-cell:hover {
+    -fx-background-color: #42A5F5;
+}
+
+
+.table-row-cell:empty {
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+}
+
+
+.list-view {
+    -fx-background-color: #E3F2FD;
+    -fx-border-color: #90CAF9;
+    -fx-border-radius: 10px;
+}
+
+.info-labels{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #5c5c5c;
+}
+
+.text-field{
+    -fx-background-color: #64B5F6;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 7px 12px;
+    -fx-font-weight: bold;
+}
+
+
+
+#friendsButton, #friendReqButton, #findPeopleButton {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-border-color: #000000;
+    -fx-background-color: #64B5F6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+
+#friendsButton:hover, #friendReqButton:hover, #findPeopleButton:hover {
+    -fx-background-color: #209afa;
+}
+
+
+
+.button {
+    -fx-background-color: #64B5F6;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 7px 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+.button:hover {
+    -fx-background-color: #42A5F5;
+}
+
+
+.accept-button, .reject-button {
+    -fx-min-width: 80px;
+    -fx-min-height: 30px;
+    -fx-max-width: 80px;
+    -fx-max-height: 30px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 8px;
+}
+
+.accept-button {
+    -fx-background-color: #00c853;
+}
+
+.reject-button {
+    -fx-background-color: #d32f2f;
+}
+
+.accept-button:hover, .reject-button:hover {
+    -fx-opacity: 0.8;
+}
+
+.username-label{
+    -fx-font-family: 'Lato', sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+}
+
+.date-time {
+    -fx-font-family: 'Roboto Mono', monospace;
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.sent-message {
+    -fx-background-color: #90CAF9;
+    -fx-padding: 5px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-alignment: center-right;
+}
+
+
+.received-message {
+    -fx-background-color: #c9e6ff;
+    -fx-padding: 5px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-alignment: center-left;
+}
+
+.full-name-label{
+    -fx-font-family: "Lato";
+    -fx-font-size: 16px;
+    -fx-font-weight: medium;
+}
+
+.bio{
+    -fx-font-family: "Raleway";
+    -fx-font-size: 14px;
+    -fx-font-weight: light;
+
+}
+
+.round-image {
+    -fx-background-radius: 50%;  /* Ensures rounded corners */
+    -fx-border-radius: 50%;
+}

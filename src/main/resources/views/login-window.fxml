@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="479.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <ComboBox fx:id="userComboBox" layoutX="106.0" layoutY="165.0" prefWidth="200" AnchorPane.rightAnchor="45.0" />
+   <Button fx:id="btnSelect" layoutX="364.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleLogin" text="Select" />
+   <Label layoutX="24.0" layoutY="32.0" prefHeight="18.0" prefWidth="182.0" text="Nume" />
+   <TextField fx:id="textFieldNume" layoutX="24.0" layoutY="57.0" />
+   <Label layoutX="24.0" layoutY="92.0" prefHeight="18.0" prefWidth="150.0" text="Prenume" />
+   <TextField fx:id="textFieldPrenume" layoutX="25.0" layoutY="110.0" />
+   <Label layoutX="25.0" layoutY="148.0" prefHeight="18.0" prefWidth="150.0" text="Parola" />
+   <PasswordField fx:id="textFieldParola" layoutX="25.0" layoutY="178.0" />
+   <Button layoutX="24.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleLoginButton" text="Login" />
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="443.0" prefWidth="503.0" styleClass="root-pane" stylesheets="@../css/user-view.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+    <children>
+      <Label styleClass="info-labels" layoutX="149.0" layoutY="73.0" prefHeight="18.0" prefWidth="126.0" text="Username" />
+      <TextField fx:id="textUsername" layoutX="149.0" layoutY="98.0" />
+      <Label styleClass="info-labels" layoutX="149.0" layoutY="132.0" prefHeight="18.0" prefWidth="150.0" text="Password" />
+      <PasswordField  fx:id="textPassword" layoutX="149.0" layoutY="150.0" />
+        <Button fx:id="btnLogin" layoutX="178.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="109.0" text="Log In" />
+        <Button fx:id="btnRegister" layoutX="151.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="34.0" prefWidth="164.0" text="Create an account" />
+      <VBox fx:id="vboxDebug" layoutX="331.0" layoutY="82.0" prefHeight="200.0" prefWidth="164.0" />
+    </children>
+</AnchorPane>

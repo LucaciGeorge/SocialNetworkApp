@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="454.0" prefWidth="666.0" styleClass="root-pane" stylesheets="@../css/user-view.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileViewController">
+   <children>
+      <ImageView fx:id="profileImageView" fitHeight="122.0" fitWidth="128.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" styleClass="round-image">
+         <image>
+            <Image url="@../profile-pics/default.png" />
+         </image>
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+      </ImageView>
+      <Label fx:id="lblUsername" layoutX="121.0" layoutY="30.0" styleClass="username-label" text="\@username" />
+      <Label fx:id="lblNumePrenume" layoutX="125.0" layoutY="56.0" prefHeight="26.0" prefWidth="114.0" styleClass="full-name-label" text="Nume Prenume" />
+      <Label layoutX="125.0" layoutY="75.0" prefHeight="18.0" prefWidth="91.0" styleClass="bio" text="Bio:" />
+      <TableView fx:id="tableMain" layoutX="97.0" layoutY="167.0" prefHeight="220.0" prefWidth="408.0">
+        <columns>
+          <TableColumn fx:id="ColoanaNume" prefWidth="100.79998779296875" text="Nume" />
+          <TableColumn fx:id="ColoanaPrenume" prefWidth="96.80000305175781" text="Prenume" />
+            <TableColumn fx:id="ColoanaData" prefWidth="196.7999267578125" text="Prieteni de la data de" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEdit" layoutX="263.0" layoutY="26.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="106.0" text="Edit Profile" />
+      <Button fx:id="btnSugestii" layoutX="382.0" layoutY="26.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="106.0" text="Vezi sugestii" />
+      <Button fx:id="btnPrieteni" layoutX="496.0" layoutY="26.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="114.0" text="Vezi prieteni" />
+      <Label fx:id="lblPrieteniSugestii" layoutX="102.0" layoutY="140.0" prefHeight="18.0" prefWidth="196.0" styleClass="bio" text="Prieteni" />
+      <Label fx:id="lblBio" layoutX="125.0" layoutY="93.0" styleClass="bio" text="text" />
+   </children>
+</AnchorPane>
