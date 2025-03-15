@@ -101,10 +101,10 @@
 
         public void initialize() {
             ColoanaNume.setCellValueFactory(cellData ->
-                    new SimpleStringProperty(cellData.getValue().getFirstName())
+                    new SimpleStringProperty(cellData.getValue().getLastName())
             );
             ColoanaPrenume.setCellValueFactory(cellData ->
-                    new SimpleStringProperty(cellData.getValue().getLastName())
+                    new SimpleStringProperty(cellData.getValue().getFirstName())
             );
             ColoanaFriendsFrom.setCellValueFactory(cellData -> {
                 User friend = cellData.getValue();

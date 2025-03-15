@@ -274,8 +274,8 @@ public class ProfileViewController {
         lblBio.setText(user.getBio());
         lblNumePrenume.setText(user.getFirstName() + " " + user.getLastName());
 
-        ColoanaNume.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFirstName()));
-        ColoanaPrenume.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getLastName()));
+        ColoanaNume.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getLastName()));
+        ColoanaPrenume.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFirstName()));
         ColoanaData.setCellValueFactory(cellData -> {
             User friend = cellData.getValue();
             String dateString = service.get_friends_from(friend, user)

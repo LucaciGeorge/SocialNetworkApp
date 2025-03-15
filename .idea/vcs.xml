@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SocialNetworkApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SocialNetworkApp-Clone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab02-data-processing-LucaciGeorge" vcs="Git" />
   </component>
 </project>
